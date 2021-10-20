@@ -1,36 +1,48 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
     color: #999;
 }
 
-#game {
-    display: flex;
+#tracker {
     margin: auto;
     width: 400px;
-    height: 400px;
-    background-color: rgb(9, 92, 60);
-    flex-wrap: wrap;
+    border: 1px solid #999;
+    padding: 10px;
 }
 
-.game-cell {
-    width: 98px;
-    height: 98px;
-    border: 1px solid white;
+.input-text {
+    width: 99%;
+    height: 20px;
 }
 
-.picture {
-    background-image: url('../img/goblin.png');
-    background-repeat: no-repeat;
-    background-position: center;
+.pinned {
+    font-size: 1.5em;
 }
 
-.cursor {
-    cursor: url('../img/bam.png'), auto;
+.all-tasks {
+    font-size: 1.5em;
 }
 
-.points {
-    width: 400px;
-    color: black;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 25px;
+li {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border: 1px solid #999;
+    border-radius: 30px;
+    padding-left: 20px;
+    padding-right: 10px;
+}
+
+li > input {
+    width: 18px;
+    height: 30px;
+
+}
+
+.task-text {
+
 }
